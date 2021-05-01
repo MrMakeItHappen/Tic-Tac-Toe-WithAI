@@ -11,7 +11,7 @@ import SwiftUI
 struct Tic_Tac_Toe_WithAIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CD9AD50F263D9E52007B509B /* Tic_Tac_Toe_WithAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AD50E263D9E52007B509B /* Tic_Tac_Toe_WithAIApp.swift */; };
-		CD9AD511263D9E52007B509B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AD510263D9E52007B509B /* ContentView.swift */; };
+		CD9AD511263D9E52007B509B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AD510263D9E52007B509B /* HomeView.swift */; };
 		CD9AD513263D9E54007B509B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9AD512263D9E54007B509B /* Assets.xcassets */; };
 		CD9AD516263D9E54007B509B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9AD515263D9E54007B509B /* Preview Assets.xcassets */; };
+		CD9AD51F263DA152007B509B /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AD51E263DA152007B509B /* Move.swift */; };
+		CD9AD522263DB2C1007B509B /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AD521263DB2C1007B509B /* Alerts.swift */; };
+		CD9AD525263DE221007B509B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AD524263DE221007B509B /* GameViewModel.swift */; };
+		CD9AD528263DE94A007B509B /* GamePieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AD527263DE94A007B509B /* GamePieceView.swift */; };
+		CD9AD52A263DE966007B509B /* SelectionIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AD529263DE966007B509B /* SelectionIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD9AD50B263D9E52007B509B /* Tic-Tac-Toe-WithAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic-Tac-Toe-WithAI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9AD50E263D9E52007B509B /* Tic_Tac_Toe_WithAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_Toe_WithAIApp.swift; sourceTree = "<group>"; };
-		CD9AD510263D9E52007B509B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD9AD510263D9E52007B509B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CD9AD512263D9E54007B509B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD9AD515263D9E54007B509B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD9AD517263D9E54007B509B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9AD51E263DA152007B509B /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		CD9AD521263DB2C1007B509B /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		CD9AD524263DE221007B509B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		CD9AD527263DE94A007B509B /* GamePieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePieceView.swift; sourceTree = "<group>"; };
+		CD9AD529263DE966007B509B /* SelectionIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,11 @@
 		CD9AD50D263D9E52007B509B /* Tic-Tac-Toe-WithAI */ = {
 			isa = PBXGroup;
 			children = (
+				CD9AD526263DE937007B509B /* Views */,
+				CD9AD523263DE20A007B509B /* View Model */,
+				CD9AD520263DB2B5007B509B /* Alerts */,
+				CD9AD51D263DA146007B509B /* Model */,
 				CD9AD50E263D9E52007B509B /* Tic_Tac_Toe_WithAIApp.swift */,
-				CD9AD510263D9E52007B509B /* ContentView.swift */,
 				CD9AD512263D9E54007B509B /* Assets.xcassets */,
 				CD9AD517263D9E54007B509B /* Info.plist */,
 				CD9AD514263D9E54007B509B /* Preview Content */,
@@ -67,6 +80,40 @@
 				CD9AD515263D9E54007B509B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD9AD51D263DA146007B509B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD9AD51E263DA152007B509B /* Move.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD9AD520263DB2B5007B509B /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				CD9AD521263DB2C1007B509B /* Alerts.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		CD9AD523263DE20A007B509B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD9AD524263DE221007B509B /* GameViewModel.swift */,
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
+		CD9AD526263DE937007B509B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD9AD527263DE94A007B509B /* GamePieceView.swift */,
+				CD9AD529263DE966007B509B /* SelectionIndicator.swift */,
+				CD9AD510263D9E52007B509B /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9AD511263D9E52007B509B /* ContentView.swift in Sources */,
+				CD9AD511263D9E52007B509B /* HomeView.swift in Sources */,
+				CD9AD528263DE94A007B509B /* GamePieceView.swift in Sources */,
+				CD9AD51F263DA152007B509B /* Move.swift in Sources */,
+				CD9AD52A263DE966007B509B /* SelectionIndicator.swift in Sources */,
+				CD9AD522263DB2C1007B509B /* Alerts.swift in Sources */,
+				CD9AD525263DE221007B509B /* GameViewModel.swift in Sources */,
 				CD9AD50F263D9E52007B509B /* Tic_Tac_Toe_WithAIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
